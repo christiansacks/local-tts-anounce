@@ -8,6 +8,7 @@
 ## pip install gTTS
 ##
 ## requires 1 argument, the username/handle
+## optional 2nd argument -m to play a modem sound prior to caller info
 ##
 ## Suggested use:
 ##
