@@ -18,6 +18,8 @@ $ sudo pip install gTTS
  ║                                                         ║
  ╚═════════════════════════════════════════════════════════╝
  ```
+
+if you add `-m` as a second argument it will play a modem connecting sound prior to reading out the caller info
  
 #### Thanks to
 warmfuzzy for asking me how to do this.

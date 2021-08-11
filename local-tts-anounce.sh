@@ -26,4 +26,8 @@ USER=$1
 DATE=$(date)
 TEXT="New call from $USER on $DATE"
 
-gtts-cli "$TEXT"|mpg321 -q - 2>/dev/null &
+if [[ $2 == "-m" ]]; then
+  $(mpg321 -q modem1.mp3 && gtts-cli "$TEXT"|mpg321 -q - 2>/dev/null) &
+else
+  gtts-cli "$TEXT"|mpg321 -q - 2>/dev/null &
+fi
